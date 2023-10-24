@@ -8,8 +8,34 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+input,
+button {
+  font-family: "pretendard", sans-serif;
+}
+
+input[type="button"],
+button {
+  cursor: pointer;
 }
 
 html {
@@ -17,11 +43,12 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  overflow-y: scroll;
   font-family: "pretendard", sans-serif;
+  font-size: 1.3rem;
   font-weight: 400;
-  color: #000;
   line-height: 1.5;
+  color: #000;
   letter-spacing: normal;
   word-break: keep-all;
 }
