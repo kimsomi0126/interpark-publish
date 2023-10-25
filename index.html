@@ -3,6 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>인터파크</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -184,10 +186,101 @@
       </header>
       <!-- 메인 영역 -->
       <div class="main">
-        <section></section>
+        <!-- 비주얼 슬라이드 -->
+        <section class="visual">
+          <div class="visual-inner">
+            <div class="swiper visual-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v1.png" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v2.png" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v3.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""> <img src="images/v4.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v5.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v6.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item"><a href=""><img src="images/v7.jpg" alt=""></a></div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- Visual Navigation -->
+            <button class="visual-btn slide-btn next">
+              이전
+            </button>
+            <button class="visual-btn slide-btn prev">
+              다음
+            </button>
+          </div>
+        </section>
+        <!-- //비주얼 슬라이드 -->
+        <!-- 쇼핑추천 -->
+        <section class="shopping">
+          <div class="shopping-inner">쇼핑추천</div>
+        </section>
+        <!-- //쇼핑추천 -->
+        <!-- 투어 -->
+        <section class="tour">
+          <div class="tour-inner">투어</div>
+        </section>
+        <!-- //투어 -->
+        <!-- 티켓 -->
+        <section class="ticket">
+          <div class="ticket-inner">티켓</div>
+        </section>
+        <!-- //티켓 -->
+        <!-- 라이브 -->
+        <section class="live">
+          <div class="live-inner">라이브</div>
+        </section>
+        <!-- //라이브 -->
+        <!-- 도서 -->
+        <section class="book">
+          <div class="book-inner">도서</div>
+        </section>
+        <!-- //도서 -->
+        <!-- 이벤트 -->
+        <section class="event">
+          <div class="event-inner">이벤트</div>
+        </section>
+        <!-- //이벤트 -->
       </div>
       <!-- 하단 영역 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer-inner">하단 영역</div>
+      </footer>
     </div>
   </body>
 </html>
+  
+  <!-- Swiper JS : 기능을 먼저 불러들임 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".visual-slide", {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      loop: true,
+      speed:500,
+      autoplay: {
+        delay:3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".visual-btn.next",
+        prevEl: ".visual-btn.prev",
+      },
+    });
+  </script>

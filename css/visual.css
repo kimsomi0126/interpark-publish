@@ -1,0 +1,74 @@
+.visual {
+  position: relative;
+  margin-top: 3rem;
+}
+.visual-inner {
+  position: relative;
+  max-width: 128rem;
+  min-height: 30rem;
+  margin: 0 auto;
+}
+
+/* 다음 코드 변경하지 마세요. */
+.swiper,
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.visual-slide-item {
+  overflow: hidden;
+  border-radius: 1.4rem;
+}
+
+.visual-slide-item a {
+  position: relative;
+  display: block;
+}
+
+.visual-slide-item img {
+  width: 100%;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid #e5e1e5;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0;
+  border-radius: 50%;
+}
+
+.slide-btn.next {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.slide-btn.prev {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.slide-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1.8rem;
+}
+.slide-btn.next::before {
+  background: url(../images/slider_arrow.svg) no-repeat center/cover;
+  transform: translate(-50%, -50%);
+}
+.slide-btn.prev::before {
+  background: url(../images/slider_arrow.svg) no-repeat center/cover;
+  transform: rotate(180deg) translate(50%, 50%);
+}
+
+.slide-btn.prev img {
+  transform: rotate(180deg);
+}

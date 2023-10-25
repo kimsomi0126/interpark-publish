@@ -3,6 +3,7 @@
 @import url("common.css");
 @import url("layout.css");
 @import url("header.css");
+@import url("visual.css");
 @import url("footer.css");
 
 * {
@@ -35,6 +36,7 @@ button {
 
 input[type="button"],
 button {
+  border: none;
   cursor: pointer;
 }
 
@@ -51,4 +53,35 @@ body {
   color: #000;
   letter-spacing: normal;
   word-break: keep-all;
+}
+
+.shopping-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 0;
+}
+.tour-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 0;
+}
+.ticket-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 0;
+}
+.live-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 0;
+}
+.book-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 0;
+}
+.event-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 9rem auto 6rem;
 }
