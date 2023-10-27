@@ -1,5 +1,149 @@
+.footer {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .footer-inner {
   position: relative;
   max-width: 128rem;
   margin: 0 auto;
+}
+
+/* 하단 바로가기 */
+.footer-link {
+  position: relative;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1.3rem;
+}
+
+.footer-link button {
+  padding-right: 1.3rem;
+  background: url(../images/icon_arrow.svg) no-repeat right center/0.8rem;
+}
+
+.footer-link-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link-list > li {
+  position: relative;
+  padding: 0 3rem;
+}
+
+.footer-link-list > li:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+.footer-link-list > li:last-child {
+  padding-right: 0;
+}
+
+.footer-link-list > li:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 1px;
+  height: 1.3rem;
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%);
+}
+.footer-link-list > li:last-child:after {
+  display: none;
+}
+
+.footer-link-list > li:hover .footer-drop {
+  display: block;
+}
+
+.footer-drop {
+  position: absolute;
+  top: 110%;
+  right: 1rem;
+  display: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  background: #fff;
+  line-height: 2;
+  border-radius: 1rem;
+}
+
+/* 하단 정보 */
+.footer-info-wrap {
+  position: relative;
+  display: flex;
+  padding: 2.5rem 0 5rem;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-info h4 {
+  width: 22rem;
+  font-size: 1.5rem;
+}
+
+.footer-info:first-child {
+  padding-right: 2rem;
+}
+.footer-info:last-child {
+  padding-left: 2rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-info-list {
+  position: relative;
+}
+.footer-info-list a {
+  color: #777;
+}
+.footer-info-list a.blue {
+  color: #4a95ff;
+  text-decoration: underline;
+}
+
+.footer-info-list p {
+  color: #777;
+  line-height: 1.4;
+}
+
+.footer-info-list b {
+  color: #222;
+  padding-right: 0.5rem;
+}
+
+.footer-info-list li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-info-list span {
+  position: relative;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.footer-info-list span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.08);
+  transform: translateY(-50%);
+}
+
+.footer-info-list p span:last-of-type::after {
+  display: none;
+}
+
+.footer address {
+  font-size: 1.1rem;
+  font-style: normal;
+  color: #ccc;
 }

@@ -1,0 +1,43 @@
+.book {
+  position: relative;
+}
+.book-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding-bottom: 9rem;
+}
+
+/* 도서 슬라이드 */
+.book-slide-item .item-img {
+  height: 33.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.book-slide-item .item-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-slide-item .item-info {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.book-slide-item .item-name {
+  /* 1줄 이상 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.book-btn.prev,
+.book-btn.next {
+  top: calc(50% - 4rem);
+}

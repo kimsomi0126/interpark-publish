@@ -1,0 +1,38 @@
+{
+  "total": 7,
+  "visual_1": {
+    "file": "images/v1.png",
+    "url": "a.html",
+    "title": "visual_1"
+  },
+  "visual_2": {
+    "file": "images/v2.png",
+    "url": "b.html",
+    "title": "visual_2"
+  },
+  "visual_3": {
+    "file": "images/v3.jpg",
+    "url": "c.html",
+    "title": "visual_3"
+  },
+  "visual_4": {
+    "file": "images/v4.jpg",
+    "url": "d.html",
+    "title": "visual_4"
+  },
+  "visual_5": {
+    "file": "images/v5.jpg",
+    "url": "e.html",
+    "title": "visual_5"
+  },
+  "visual_6": {
+    "file": "images/v6.jpg",
+    "url": "f.html",
+    "title": "visual_6"
+  },
+  "visual_7": {
+    "file": "images/v7.jpg",
+    "url": "g.html",
+    "title": "visual_7"
+  }
+}

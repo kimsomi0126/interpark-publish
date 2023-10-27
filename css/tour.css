@@ -1,0 +1,45 @@
+.tour {
+  position: relative;
+}
+
+.tour-inner {
+  position: relative;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding-bottom: 9rem;
+}
+
+.tour-slide-item {
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.tour-slide-item .item-info {
+  position: relative;
+  padding: 2rem;
+}
+
+.tour-slide-item .tour-badge {
+  position: absolute;
+  top: -1.5rem;
+  left: 2rem;
+  padding: 0 1.5rem;
+  line-height: 3.2rem;
+  background: #1769ff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+.tour-slide-item .benefit {
+  color: #1769ff;
+}
+.tour-slide-item .item-img {
+  position: relative;
+  height: 24.4rem;
+}
+.tour-slide-item .item-img img {
+  height: 100%;
+}
