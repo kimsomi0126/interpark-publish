@@ -21,6 +21,8 @@
 }
 
 .live-slide-item a {
+  display: block;
+  height: 100%;
   color: #fff;
 }
 
@@ -121,7 +123,7 @@
   left: 0;
   width: 100%;
 }
-.item-product a {
+.item-product > a {
   display: flex;
   padding: 2rem;
 }

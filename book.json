@@ -1,0 +1,63 @@
+{
+  "total": 10,
+  "book_1": {
+    "image": "images/b1.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_2": {
+    "image": "images/b2.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_3": {
+    "image": "images/b3.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_4": {
+    "image": "images/b4.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_5": {
+    "image": "images/b5.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_6": {
+    "image": "images/b6.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_7": {
+    "image": "images/b1.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_8": {
+    "image": "images/b2.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_9": {
+    "image": "images/b3.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  },
+  "book_10": {
+    "image": "images/b4.jpg",
+    "name": "책제목",
+    "price": 19800,
+    "url": "#"
+  }
+}

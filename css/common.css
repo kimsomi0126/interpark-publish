@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+input,
+button {
+  font-family: "pretendard", sans-serif;
+}
+
+input[type="button"],
+button {
+  border: none;
+  cursor: pointer;
+  /* background: #fff; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: "pretendard", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  letter-spacing: normal;
+  word-break: keep-all;
+}
+
+/* 메인 타이틀 */
+.title-wrap {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.title-wrap .title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+.title-wrap .title-txt {
+  font-size: 1.8rem;
+  color: #12121280;
+}
+
+.title-wrap img {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* 메인 탭 */
+.tab-list {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tab-list .tab-btn {
+  position: relative;
+  display: block;
+  padding: 0 2rem;
+  border: 1px solid #e5e5e5e5;
+  background: transparent;
+  font-size: 1.4rem;
+  line-height: 4.2rem;
+  border-radius: 5rem;
+}
+
+.tab-list li .tab-btn.on {
+  border-color: #333;
+  background: #333;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* 메인 바로가기 버튼 */
+.link-btn {
+  position: relative;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.link-btn a {
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 5rem;
+}
+.link-btn span {
+  padding-right: 1.5rem;
+  background: url(../images/icon_linkArrow.svg) no-repeat right 55%;
+}
+
+/* 메인 슬라이드(공통) */
+.item-img img {
+  width: 100%;
+}
+
+.item-price {
+  font-size: 1.8rem;
+}
+
+.item-price b {
+  font-size: 2rem;
+}
+
+.sale-percentage {
+  padding-right: 0.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff0000;
+}
+
+.item-name {
+  font-size: 1.5rem;
+}
+
+/* 메인 슬라이드(전체보기) */
+.slide-item-more {
+  position: relative;
+  width: 100%;
+  height: 40.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide-item-more a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.slide-item-more p {
+  margin-top: 0.5rem;
+}
+
+.none {
+  display: none;
+}
