@@ -34,26 +34,44 @@ window.addEventListener("load", function () {
     for (let i = 0; i < _res.total; i++) {
       const index = i + 1;
       const obj = _res["good_" + index];
-      const discountStyle = obj.discount == "0" ? "style='display:none'" : "";
 
-      const tempTag = `
-      <div class="swiper-slide">
-        <div class="recommend-slide-item">
-          <a href="${obj.url}">
-            <div class="item-img">
-              <img src="${obj.image}" alt="${obj.name}">
-            </div>
-            <div class="item-info">
-              <div class="item-price">
-                <span class="sale-percentage" ${discountStyle}>${obj.discount}%</span>
-                <span><b>${obj.price}</b>원</span>
-              </div>
-              <div class="item-name">${obj.name}</div>
-            </div>
-          </a>
+      let tempTag = ``;
+      if (i === _res.total - 1) {
+        // 여기서 바로가기 버튼을 출력한다.
+        tempTag = `
+        <div class="swiper-slide">
+          <div class="slide-item-more">
+            <a href="${obj.url}">
+              <i><img src="images/btn_moreProduct.svg" alt="전체보기"></i> 
+              <p>전체보기</p>
+            </a>
+          </div>
         </div>
-      </div>
-    `;
+        `;
+      } else {
+        //일반적인 코드를 출력한다.
+        tempTag = `
+        <div class="swiper-slide">
+          <div class="recommend-slide-item">
+            <a href="${obj.url}">
+              <div class="item-img">
+                <img src="${obj.image}" alt="${obj.name}">
+              </div>
+              <div class="item-info">
+                <div class="item-price">
+                  <span class="sale-percentage">${
+                    obj.discount === 0 ? "" : obj.discount + "%"
+                  }</span>
+                  <span><b>${obj.price}</b>원</span>
+                </div>
+                <div class="item-name">${obj.name}</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      `;
+      }
+
       HtmlRecommendTag += tempTag;
     }
 

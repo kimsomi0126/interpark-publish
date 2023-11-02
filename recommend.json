@@ -78,10 +78,6 @@
     "url": "#"
   },
   "good_12": {
-    "image": "images/r4.jpg",
-    "discount": 8,
-    "price": 26000,
-    "name": "상품명",
-    "url": "#"
+    "url": "go.html"
   }
 }

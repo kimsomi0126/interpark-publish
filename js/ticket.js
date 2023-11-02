@@ -17,27 +17,48 @@ window.addEventListener("load", function () {
     for (i = 0; i < _res.total; i++) {
       const index = i + 1;
       const obj = _res["ticket_" + index];
-      const tempTag = `
-      <div class="swiper-slide">
-        <div class="ticket-slide-item">
-          <a href="${obj.url}">
-            <div class="item-img">
-              <img src="${obj.image}" alt="${obj.name}">
-            </div>
-            <div class="item-info">
-              <div class="item-name">
-                <p class="name">${obj.name}</p>
-                <p class="place">${obj.place}</p>
-                <p class="duration">${obj.duration}</p>
-              </div>
-              <div class="ticket-badge">
-                <span class="blue-badge">${obj.badge}</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+      let tempTag = `
+      
       `;
+
+      i === _res.total - 1
+        ? (tempTag = `
+        <div class="swiper-slide">
+          <div class="slide-item-more">
+            <a href="${obj.url}">
+              <i><img src="images/btn_moreProduct.svg" alt="전체보기"></i> 
+              <p>전체보기</p>
+            </a>
+          </div>
+        </div>
+        `)
+        : (tempTag = `
+        <div class="swiper-slide">
+          <div class="ticket-slide-item">
+            <a href="${obj.url}">
+              <div class="item-img">
+                <img src="${obj.image}" alt="${obj.name}">
+              </div>
+              <div class="item-info">
+                <div class="item-name">
+                  <p class="name">${obj.name}</p>
+                  <p class="place">${obj.place}</p>
+                  <p class="duration">${obj.duration}</p>
+                </div>
+                <div class="ticket-badge">
+                ${
+                  obj.badge == "좌석우위"
+                    ? `<span class="blue-badge">${obj.badge}</span>`
+                    : `<span class="red-badge">${obj.badge}</span>`
+                }
+                  
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    `);
+
       HtmlTicketTag += tempTag;
     }
     showHtmlTag(HtmlTicketTag);

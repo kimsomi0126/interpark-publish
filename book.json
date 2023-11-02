@@ -1,63 +1,254 @@
 {
-  "total": 10,
-  "book_1": {
-    "image": "images/b1.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
+  "tab-1": {
+    "total": 10,
+    "book_1": {
+      "image": "images/b1.jpg",
+      "name": "MD’s Pick 책 1",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_2": {
+      "image": "images/b2.jpg",
+      "name": "MD’s Pick 책 2",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_3": {
+      "image": "images/b3.jpg",
+      "name": "MD’s Pick 책 3",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_4": {
+      "image": "images/b4.jpg",
+      "name": "MD’s Pick 책 4",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_5": {
+      "image": "images/b5.jpg",
+      "name": "MD’s Pick 책 5",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_6": {
+      "image": "images/b6.jpg",
+      "name": "MD’s Pick 책 6",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_7": {
+      "image": "images/b1.jpg",
+      "name": "MD’s Pick 책 7",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_8": {
+      "image": "images/b2.jpg",
+      "name": "MD’s Pick 책 8",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_9": {
+      "image": "images/b3.jpg",
+      "name": "MD’s Pick 책 9",
+      "price": 19800,
+      "url": "#"
+    },
+    "book_10": {
+      "image": "images/b4.jpg",
+      "name": "MD’s Pick 책 10",
+      "price": 19800,
+      "url": "#"
+    }
   },
-  "book_2": {
-    "image": "images/b2.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
+  "tab-2": {
+    "total": 10,
+    "book_1": {
+      "image": "images/b6.jpg",
+      "name": "베스트셀러 책 1",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_2": {
+      "image": "images/b5.jpg",
+      "name": "베스트셀러 책 2",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_3": {
+      "image": "images/b4.jpg",
+      "name": "베스트셀러 책 3",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_4": {
+      "image": "images/b3.jpg",
+      "name": "베스트셀러 책 4",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_5": {
+      "image": "images/b5.jpg",
+      "name": "베스트셀러 책 5",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_6": {
+      "image": "images/b6.jpg",
+      "name": "베스트셀러 책 6",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_7": {
+      "image": "images/b1.jpg",
+      "name": "베스트셀러 책 7",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_8": {
+      "image": "images/b2.jpg",
+      "name": "베스트셀러 책 8",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_9": {
+      "image": "images/b3.jpg",
+      "name": "베스트셀러 책 9",
+      "price": 333333,
+      "url": "#"
+    },
+    "book_10": {
+      "image": "images/b4.jpg",
+      "name": "베스트셀러 책 10",
+      "price": 333333,
+      "url": "#"
+    }
   },
-  "book_3": {
-    "image": "images/b3.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
+  "tab-3": {
+    "total": 10,
+    "book_1": {
+      "image": "images/b6.jpg",
+      "name": "신간추천 책 1",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_2": {
+      "image": "images/b3.jpg",
+      "name": "신간추천 책 2",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_3": {
+      "image": "images/b2.jpg",
+      "name": "신간추천 책 3",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_4": {
+      "image": "images/b4.jpg",
+      "name": "신간추천 책 4",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_5": {
+      "image": "images/b5.jpg",
+      "name": "신간추천 책 5",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_6": {
+      "image": "images/b6.jpg",
+      "name": "신간추천 책 6",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_7": {
+      "image": "images/b1.jpg",
+      "name": "신간추천 책 7",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_8": {
+      "image": "images/b2.jpg",
+      "name": "신간추천 책 8",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_9": {
+      "image": "images/b3.jpg",
+      "name": "신간추천 책 9",
+      "price": 222222,
+      "url": "#"
+    },
+    "book_10": {
+      "image": "images/b4.jpg",
+      "name": "신간추천 책 10",
+      "price": 222222,
+      "url": "#"
+    }
   },
-  "book_4": {
-    "image": "images/b4.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_5": {
-    "image": "images/b5.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_6": {
-    "image": "images/b6.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_7": {
-    "image": "images/b1.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_8": {
-    "image": "images/b2.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_9": {
-    "image": "images/b3.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
-  },
-  "book_10": {
-    "image": "images/b4.jpg",
-    "name": "책제목",
-    "price": 19800,
-    "url": "#"
+  "tab-4": {
+    "total": 10,
+    "book_1": {
+      "image": "images/b3.jpg",
+      "name": "특가할인 책 1",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_2": {
+      "image": "images/b1.jpg",
+      "name": "특가할인 책 2",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_3": {
+      "image": "images/b3.jpg",
+      "name": "특가할인 책 3",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_4": {
+      "image": "images/b4.jpg",
+      "name": "특가할인 책 4",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_5": {
+      "image": "images/b5.jpg",
+      "name": "특가할인 책 5",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_6": {
+      "image": "images/b6.jpg",
+      "name": "특가할인 책 6",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_7": {
+      "image": "images/b1.jpg",
+      "name": "특가할인 책 7",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_8": {
+      "image": "images/b2.jpg",
+      "name": "특가할인 책 8",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_9": {
+      "image": "images/b3.jpg",
+      "name": "특가할인 책 9",
+      "price": 55555,
+      "url": "#"
+    },
+    "book_10": {
+      "image": "images/b4.jpg",
+      "name": "특가할인 책 10",
+      "price": 55555,
+      "url": "#"
+    }
   }
 }
