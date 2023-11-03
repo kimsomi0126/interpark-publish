@@ -47,7 +47,7 @@
   top: calc(50% - 4rem);
 }
 
-.tab-2 .book-slide-item .item-img:after {
+.book-slide.tab-2 .item-img:after {
   content: counter(rank);
   position: absolute;
   bottom: 0;

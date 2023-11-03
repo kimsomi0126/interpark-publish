@@ -1,5 +1,9 @@
 // 모든 js는 html 로드 후 실행해야 안전함
 window.addEventListener("load", function () {
+  // 숫자 콤마 출력
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   // 추천상품 슬라이드 기능
   // 코딩 시나리오 작성 : 의사코드
   //1. 외부데이터 호출
@@ -22,7 +26,26 @@ window.addEventListener("load", function () {
       // 데이터를 정리해서 전달하는것이 관례
       //전달받은 문자열 js에서 사용하도록 json 해석(parse)하여 객체화 {}한다
       const json = JSON.parse(res);
-      makeHtmlTag(json);
+      makeHtmlTag(json["tab-1"]);
+      const tabButtons = document.querySelectorAll(".recommend-tab .tab-btn");
+      const bookSlide = document.querySelector(".recommend-slide");
+      tabButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          const category = button.getAttribute("data-category");
+          const categoryData = json[category];
+          makeHtmlTag(categoryData);
+
+          // 모든 탭 버튼에서 "on" 클래스 제거
+          tabButtons.forEach(function (btn) {
+            btn.classList.remove("on");
+            bookSlide.classList.remove(btn.getAttribute("data-category"));
+          });
+
+          // 클릭한 탭 버튼에 "on" 클래스 추가
+          button.classList.add("on");
+          bookSlide.classList.add(category);
+        });
+      });
     }
   };
 
@@ -62,7 +85,7 @@ window.addEventListener("load", function () {
                   <span class="sale-percentage">${
                     obj.discount === 0 ? "" : obj.discount + "%"
                   }</span>
-                  <span><b>${obj.price}</b>원</span>
+                  <span><b>${numberWithCommas(obj.price)}</b>원</span>
                 </div>
                 <div class="item-name">${obj.name}</div>
               </div>

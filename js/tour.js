@@ -15,7 +15,27 @@ window.addEventListener("load", function () {
       const res = event.target.response;
       const json = JSON.parse(res);
 
-      makeHtmlTag(json);
+      makeHtmlTag(json["tab-1"]);
+
+      const tabButtons = document.querySelectorAll(".tour-tab .tab-btn");
+      const bookSlide = document.querySelector(".tour-slide");
+      tabButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          const category = button.getAttribute("data-category");
+          const categoryData = json[category];
+          makeHtmlTag(categoryData);
+
+          // 모든 탭 버튼에서 "on" 클래스 제거
+          tabButtons.forEach(function (btn) {
+            btn.classList.remove("on");
+            bookSlide.classList.remove(btn.getAttribute("data-category"));
+          });
+
+          // 클릭한 탭 버튼에 "on" 클래스 추가
+          button.classList.add("on");
+          bookSlide.classList.add(category);
+        });
+      });
     }
   };
 
@@ -33,7 +53,11 @@ window.addEventListener("load", function () {
               <img src="${obj.image}" alt="${obj.name}">
             </div>
             <div class="item-info">
-              <span class="tour-badge">${obj.cate}</span>
+            ${
+              obj.cate === ""
+                ? ""
+                : `<span class="tour-badge">${obj.cate}</span>`
+            }
               <div class="item-name">
                 <span class="benefit">${obj.benefit}</span>
                 <p class="name">${obj.name}</p>
