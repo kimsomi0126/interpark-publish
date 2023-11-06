@@ -1,0 +1,68 @@
+.book {
+  position: relative;
+
+  &-inner {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding-bottom: 9rem;
+  }
+}
+
+.book-slide .swiper-wrapper {
+  counter-reset: rank;
+}
+
+/* 도서 슬라이드 */
+.book-slide-item {
+  .item {
+    &-img {
+      position: relative;
+      height: 33.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    &-img img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &-info {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    &-name {
+      display: -webkit-box;
+      /* 1줄 이상 말줄임 */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+.book-btn {
+  &.prev,
+  &.next {
+    top: calc(50% - 4rem);
+  }
+}
+.book-slide.tab-2 .item-img:after {
+  content: counter(rank);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(250, 59, 29, 0.6);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #fff;
+  text-align: center;
+  counter-increment: rank;
+}

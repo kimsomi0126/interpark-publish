@@ -1,12 +1,12 @@
-@charset "UTF-8";
 .event {
   position: relative;
-}
-.event-inner {
-  position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9rem;
+
+  &-inner {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding-bottom: 9rem;
+  }
 }
 
 /* 이벤트 슬라이드 */
@@ -16,7 +16,8 @@
   border-radius: 1.5rem;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
+
+  img {
+    opacity: 0.93;
+  }
 }
-.event-slide-item img {
-  opacity: 0.93;
-}/*# sourceMappingURL=event.css.map */

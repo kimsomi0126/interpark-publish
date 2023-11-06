@@ -1,7 +1,7 @@
+@charset "UTF-8";
 .recommend {
   position: relative;
 }
-
 .recommend-inner {
   position: relative;
   max-width: 128rem;
@@ -10,38 +10,9 @@
 }
 
 /* 쇼핑추천 슬라이드 */
-
 .recommend-slide .swiper-wrapper {
   counter-reset: rank;
 }
-.recommend-slide-item {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.recommend-slide-item .item-img {
-  position: relative;
-  background: rgba(0, 0, 0, 0.2);
-}
-.recommend-slide-item .item-img img {
-  opacity: 0.9;
-  object-fit: cover;
-}
-.recommend-slide-item .item-info {
-  padding: 2rem;
-}
-
-.recommend-slide-item .item-name {
-  min-height: 4.5rem;
-  display: -webkit-box;
-  /* 2줄 이상 말줄임 */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
 .recommend-slide.tab-2 .item-img:after {
   content: counter(rank);
   position: absolute;
@@ -58,3 +29,29 @@
   border-radius: 0 0 1.5rem 0;
   counter-increment: rank;
 }
+
+.recommend-slide-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.recommend-slide-item .item-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+.recommend-slide-item .item-img img {
+  opacity: 0.9;
+  object-fit: cover;
+}
+.recommend-slide-item .item-info {
+  padding: 2rem;
+}
+.recommend-slide-item .item-name {
+  min-height: 4.5rem;
+  display: -webkit-box;
+  /* 2줄 이상 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}/*# sourceMappingURL=recommend.css.map */

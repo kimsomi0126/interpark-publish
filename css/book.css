@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .book {
   position: relative;
 }
@@ -22,17 +23,14 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
-
 .book-slide-item .item-img img {
   height: 100%;
   object-fit: cover;
 }
-
 .book-slide-item .item-info {
   margin: 1rem 0;
   text-align: center;
 }
-
 .book-slide-item .item-name {
   display: -webkit-box;
   /* 1줄 이상 말줄임 */
@@ -42,8 +40,7 @@
   -webkit-box-orient: vertical;
 }
 
-.book-btn.prev,
-.book-btn.next {
+.book-btn.prev, .book-btn.next {
   top: calc(50% - 4rem);
 }
 
@@ -61,4 +58,4 @@
   color: #fff;
   text-align: center;
   counter-increment: rank;
-}
+}/*# sourceMappingURL=book.css.map */

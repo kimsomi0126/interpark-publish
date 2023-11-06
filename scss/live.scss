@@ -1,0 +1,151 @@
+.live {
+  position: relative;
+
+  &-inner {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding-bottom: 9rem;
+  }
+
+  &-wrap {
+    position: relative;
+  }
+}
+
+/* 라이브 슬라이드 */
+.live-slide-item {
+  height: 45rem;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  a {
+    display: block;
+    height: 100%;
+    color: #fff;
+  }
+  .item-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 18.65%,
+          transparent 39.78%
+        ),
+        linear-gradient(180deg, transparent 56.75%, rgba(0, 0, 0, 0.5) 87.59%);
+      border-radius: 1rem;
+    }
+    &.ready::after {
+      background: linear-gradient(
+          0deg,
+          rgba(34, 34, 34, 0.5),
+          rgba(34, 34, 34, 0.5)
+        ),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.4) 18.65%, transparent 39.78%),
+        linear-gradient(180deg, transparent 56.75%, rgba(0, 0, 0, 0.4) 87.59%);
+    }
+  }
+
+  .item-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    /* 2줄 이상 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .live-badge {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    border-radius: 5rem;
+    &.on {
+      background: #ef3e43;
+    }
+  }
+}
+
+.item-time {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  font-size: 2.8rem;
+  text-align: center;
+  transform: translateY(-50%);
+  b {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+}
+.item-product {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  > a {
+    display: flex;
+    padding: 2rem;
+  }
+}
+
+.product-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.5rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-info {
+  margin-left: 1.5rem;
+  padding-top: 0.5rem;
+  .item-name {
+    /* 2줄 이상 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}

@@ -1,7 +1,6 @@
 .tour {
   position: relative;
 }
-
 .tour-inner {
   position: relative;
   max-width: 128rem;
@@ -15,12 +14,10 @@
   overflow: hidden;
   border-radius: 1.5rem;
 }
-
 .tour-slide-item .item-info {
   position: relative;
   padding: 2rem;
 }
-
 .tour-slide-item .tour-badge {
   position: absolute;
   top: -1.5rem;
@@ -42,4 +39,4 @@
 }
 .tour-slide-item .item-img img {
   height: 100%;
-}
+}/*# sourceMappingURL=tour.css.map */

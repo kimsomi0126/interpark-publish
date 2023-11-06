@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 상단 영역 */
 .header {
   position: relative;
@@ -11,16 +12,20 @@
   height: 100%;
   margin: 0 auto;
 }
-
 .header-top {
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
+  /* 로그인 */
 }
-
 .header-top-left {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-top-right {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -42,12 +47,15 @@
 .header-search label {
   display: none;
 }
-
 .header-search input::placeholder {
   font-size: 1.5rem;
   font-weight: 500;
   color: #999;
 }
+.header-search:hover .search-pop {
+  display: block;
+}
+
 .search-wrap {
   position: relative;
   width: 100%;
@@ -56,7 +64,6 @@
   background-color: #fff;
   border-radius: 10rem;
 }
-
 .search-form {
   display: flex;
   align-items: center;
@@ -79,12 +86,10 @@
   font-size: 0;
   cursor: pointer;
 }
-
-.header-search:hover .search-pop {
-  display: block;
+.search-rank {
+  padding: 2.5rem 2.5rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
-
-/*검색어순위 */
 .search-pop {
   position: absolute;
   top: 0;
@@ -96,8 +101,11 @@
   z-index: 9;
   background-color: #fff;
   border-radius: 2.5rem;
+  /*검색어순위 */
 }
-
+.search-pop h2 {
+  font-size: 1.7rem;
+}
 .search-pop .search-form {
   padding: 1rem 0 1rem 2rem;
 }
@@ -107,25 +115,14 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.search-pop h2 {
-  font-size: 1.7rem;
-}
-
 .search-pop .rank-date {
   font-size: 1.3rem;
   color: #999;
 }
-
-.search-rank {
-  padding: 2.5rem 2.5rem 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.rank-bottom {
+.search-pop .rank-bottom {
   margin-top: 2rem;
 }
-.rank-bottom ul {
+.search-pop .rank-bottom ul {
   width: 100%;
   height: 16.5rem;
   display: flex;
@@ -133,8 +130,7 @@
   flex-direction: column;
   counter-reset: num;
 }
-
-.rank-bottom li {
+.search-pop .rank-bottom li {
   position: relative;
   width: 45%;
   height: 2.6rem;
@@ -144,7 +140,7 @@
   padding-left: 2.8rem;
   font-size: 1.5rem;
 }
-.rank-bottom li::before {
+.search-pop .rank-bottom li::before {
   content: counter(num);
   position: absolute;
   top: 0;
@@ -155,17 +151,9 @@
   text-align: center;
   counter-increment: num;
 }
-
-.rank-bottom li:nth-child(-n + 3)::before {
+.search-pop .rank-bottom li:nth-child(-n+3)::before {
   font-weight: 700;
   color: #ff0000;
-}
-
-/* 로그인 */
-.header-top-right {
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .menber-menu {
@@ -175,17 +163,15 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 .menber-menu > li {
   position: relative;
   margin-left: 2rem;
 }
-
 .menber-menu .mypage-btn {
   padding-right: 1.5rem;
   border: 0;
   background: none;
-  background: url(../images/icon_arrow.svg) no-repeat center right / 1rem;
+  background: url(../images/icon_arrow.svg) no-repeat center right/1rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -217,11 +203,9 @@
   padding-left: 2rem;
   font-size: 1.3rem;
 }
-
-.mypage-pop li:nth-child(-n + 2) {
+.mypage-pop li:nth-child(-n+2) {
   border-right: 1px solid rgba(0, 0, 0, 0.08);
 }
-
 .mypage-pop li a {
   display: flex;
   align-items: center;
@@ -240,23 +224,16 @@
   display: flex;
   align-items: center;
 }
-
 .header-cate li {
   position: relative;
   margin-right: 2.2rem;
   font-size: 1.6rem;
   font-weight: 600;
 }
-
 .header-cate li:last-of-type {
   margin-right: 0;
 }
 
-/* 
-  after와 before는 기본적으로 inline 이다.
-  width, height, margin, padding이 원활하지 않다.
-  그래서 많은 사람들이 display를 별도로 준다.
-*/
 .icon-hot:after {
   content: "";
   position: relative;
@@ -281,7 +258,6 @@
   align-items: center;
   margin-right: 0.6rem;
 }
-
 .header-icon img {
   width: 100%;
 }
@@ -294,9 +270,7 @@
   margin-left: 1.2rem;
   padding-left: 1.2rem;
 }
-
-/* 라인넣기 */
-.header-today-menu::before {
+.header-today-menu:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -306,20 +280,17 @@
   background-color: #e9e9e9;
   transform: translateY(-50%);
 }
-
 .header-today-menu li {
   position: relative;
   margin-right: 2.2rem;
   font-size: 1.6rem;
   font-weight: 600;
 }
-
 .header-today-menu li:last-of-type {
   margin-right: 0;
 }
-
 .header-today-menu li a {
   position: relative;
   display: flex;
   align-items: center;
-}
+}/*# sourceMappingURL=header.css.map */

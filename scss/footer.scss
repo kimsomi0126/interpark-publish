@@ -1,0 +1,153 @@
+.footer {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  &-inner {
+    position: relative;
+    max-width: 128rem;
+    margin: 0 auto;
+  }
+  /* 하단 바로가기 */
+  &-link {
+    position: relative;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 1.3rem;
+
+    button {
+      padding-right: 1.3rem;
+      background: url(../images/icon_arrow.svg) no-repeat right
+        (center / 0.8rem);
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+
+      > li {
+        position: relative;
+        padding: 0 3rem;
+
+        &:first-child {
+          padding-left: 0;
+          text-align: left;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0%;
+          width: 1px;
+          height: 1.3rem;
+          background: rgba(0, 0, 0, 0.3);
+          transform: translateY(-50%);
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+
+        &:hover .footer-drop {
+          display: block;
+        }
+      }
+    }
+
+    .footer-drop {
+      position: absolute;
+      top: 110%;
+      right: 1rem;
+      display: none;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      background: #fff;
+      line-height: 2;
+      border-radius: 1rem;
+    }
+  }
+  address {
+    font-size: 1.1rem;
+    font-style: normal;
+    color: #ccc;
+  }
+}
+
+/* 하단 정보 */
+.footer-info {
+  display: flex;
+
+  &-wrap {
+    position: relative;
+    display: flex;
+    padding: 2.5rem 0 5rem;
+  }
+
+  h4 {
+    width: 22rem;
+    font-size: 1.5rem;
+  }
+
+  &:first-child {
+    padding-right: 2rem;
+  }
+
+  &:last-child {
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &-list {
+    position: relative;
+
+    a {
+      color: #777;
+
+      &.blue {
+        color: #4a95ff;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: #777;
+      line-height: 1.4;
+    }
+
+    b {
+      color: #222;
+      padding-right: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      padding-right: 0.5rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 1rem;
+        background: rgba(0, 0, 0, 0.08);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  p span:last-of-type::after {
+    display: none;
+  }
+}
