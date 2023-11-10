@@ -2,12 +2,6 @@
 .live {
   position: relative;
 }
-.live-inner {
-  position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9rem;
-}
 .live-wrap {
   position: relative;
 }
@@ -30,7 +24,8 @@
 }
 .live-slide-item .item-img img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .live-slide-item .item-img::after {
   content: "";
@@ -120,7 +115,8 @@
 .product-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product-info {

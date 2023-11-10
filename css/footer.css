@@ -4,10 +4,8 @@
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   /* 하단 바로가기 */
 }
-.footer-inner {
-  position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
+.footer .inner {
+  margin-bottom: 0;
 }
 .footer-link {
   position: relative;
@@ -127,4 +125,23 @@
 }
 .footer-info p span:last-of-type::after {
   display: none;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    max-width: 102.4rem;
+    margin: 0 auto;
+  }
+  .footer .inner {
+    padding: 0 3%;
+  }
+  .footer-link-list > li {
+    padding: 0 1.25rem;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+  }
+  .footer-info h4 {
+    margin-bottom: 0.5rem;
+  }
 }/*# sourceMappingURL=footer.css.map */

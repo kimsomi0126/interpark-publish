@@ -86,6 +86,14 @@ window.addEventListener("load", function () {
         nextEl: ".book-btn.next",
         prevEl: ".book-btn.prev",
       },
+      breakpoints: {
+        1280: {
+          slidesPerView: 5,
+        },
+        767: {
+          slidesPerView: 3,
+        },
+      },
     });
   }
 });

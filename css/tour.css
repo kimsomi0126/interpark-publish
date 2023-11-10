@@ -1,11 +1,12 @@
 .tour {
   position: relative;
 }
-.tour-inner {
+.tour-wrap {
   position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9rem;
+}
+
+.tour-slide {
+  padding: 0 1px;
 }
 
 .tour-slide-item {
@@ -39,4 +40,8 @@
 }
 .tour-slide-item .item-img img {
   height: 100%;
+}
+
+.tour-btn.prev, .tour-btn.next {
+  top: calc(50% + 2rem);
 }/*# sourceMappingURL=tour.css.map */

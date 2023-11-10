@@ -2,11 +2,8 @@
 .event {
   position: relative;
 }
-.event-inner {
+.event-wrap {
   position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9rem;
 }
 
 /* 이벤트 슬라이드 */

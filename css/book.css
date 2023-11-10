@@ -2,18 +2,16 @@
 .book {
   position: relative;
 }
-.book-inner {
-  position: relative;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9rem;
-}
 
 .book-slide .swiper-wrapper {
   counter-reset: rank;
 }
 
 /* 도서 슬라이드 */
+.book-slide {
+  padding: 0 1px;
+}
+
 .book-slide-item .item-img {
   position: relative;
   height: 33.4rem;
@@ -25,7 +23,8 @@
 }
 .book-slide-item .item-img img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .book-slide-item .item-info {
   margin: 1rem 0;
@@ -38,10 +37,6 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-}
-
-.book-btn.prev, .book-btn.next {
-  top: calc(50% - 4rem);
 }
 
 .book-slide.tab-2 .item-img:after {
@@ -58,4 +53,11 @@
   color: #fff;
   text-align: center;
   counter-increment: rank;
+}
+
+@media (max-width: 1280px) {
+  .book-slide-item .item-img {
+    height: auto;
+    aspect-ratio: 1/1.5;
+  }
 }/*# sourceMappingURL=book.css.map */

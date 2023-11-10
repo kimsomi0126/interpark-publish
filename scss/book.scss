@@ -1,12 +1,5 @@
 .book {
   position: relative;
-
-  &-inner {
-    position: relative;
-    max-width: 128rem;
-    margin: 0 auto;
-    padding-bottom: 9rem;
-  }
 }
 
 .book-slide .swiper-wrapper {
@@ -14,6 +7,10 @@
 }
 
 /* 도서 슬라이드 */
+
+.book-slide {
+  padding: 0 1px;
+}
 .book-slide-item {
   .item {
     &-img {
@@ -45,12 +42,12 @@
   }
 }
 
-.book-btn {
-  &.prev,
-  &.next {
-    top: calc(50% - 4rem);
-  }
-}
+// .book-btn {
+//   &.prev,
+//   &.next {
+//     top: calc(50% - 4rem);
+//   }
+// }
 .book-slide.tab-2 .item-img:after {
   content: counter(rank);
   position: absolute;
@@ -65,4 +62,16 @@
   color: #fff;
   text-align: center;
   counter-increment: rank;
+}
+
+@media (max-width: 1280px) {
+  .book-slide-item .item-img {
+    height: auto;
+    aspect-ratio: 1/1.5;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
 }

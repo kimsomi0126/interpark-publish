@@ -105,6 +105,14 @@ window.addEventListener("load", function () {
         nextEl: ".live-btn.next",
         prevEl: ".live-btn.prev",
       },
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+        },
+        767: {
+          slidesPerView: 3,
+        },
+      },
     });
   }
 });

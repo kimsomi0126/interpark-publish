@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<lang="ko">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
     <script src="js/visual.js"></script>
     <!-- Swiper JS : 기능을 먼저 불러들임 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/recommend.js"></script>
     <script src="js/tour.js"></script>
     <script src="js/ticket.js"></script>
@@ -14,7 +15,10 @@
     <script src="js/book.js"></script>
     <script src="js/event.js"></script>
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -23,23 +27,35 @@
       <!-- 상단 영역 -->
       <header class="header">
         <!-- 레이아웃 : div -->
-        <div class="header-inner">
+        <div class="inner">
           <div class="header-top">
             <div class="header-top-left">
-              <h1 class="h-logo"><a href="index.html"><img src="images/logo.svg" alt="로고">인터파크</a></h1>
+              <h1 class="h-logo">
+                <a href="index.html"
+                  ><img src="images/logo.svg" alt="로고" />인터파크</a
+                >
+              </h1>
               <div class="header-search">
                 <div class="search-wrap">
                   <form action="" class="search-form">
                     <label for="">검색</label>
-                    <input type="text" placeholder="검색어를 입력해주세요." class="search_word">
-                    <input type="button" value="검색" class="search-bt">
+                    <input
+                      type="text"
+                      placeholder="검색어를 입력해주세요."
+                      class="search_word"
+                    />
+                    <input type="button" value="검색" class="search-bt" />
                   </form>
                 </div>
                 <div class="search-pop">
                   <form action="" class="search-form">
                     <label for="">검색</label>
-                    <input type="text" placeholder="검색어를 입력해주세요." class="search_word">
-                    <input type="button" value="검색" class="search-bt">
+                    <input
+                      type="text"
+                      placeholder="검색어를 입력해주세요."
+                      class="search_word"
+                    />
+                    <input type="button" value="검색" class="search-bt" />
                   </form>
                   <div class="search-rank">
                     <div class="rank-top">
@@ -114,25 +130,33 @@
                     <ul>
                       <li>
                         <a href="">
-                          <i class="header-icon"><img src="images/icon_tour.png" alt="투어 MY"></i>
+                          <i class="header-icon"
+                            ><img src="images/icon_tour.png" alt="투어 MY"
+                          /></i>
                           투어 MY
                         </a>
                       </li>
                       <li>
                         <a href="">
-                          <i class="header-icon"><img src="images/icon_ticket.png" alt="티켓 MY"></i>
+                          <i class="header-icon"
+                            ><img src="images/icon_ticket.png" alt="티켓 MY"
+                          /></i>
                           티켓 MY
                         </a>
                       </li>
                       <li>
                         <a href="">
-                          <i class="header-icon"><img src="images/icon_shopping.png" alt="쇼핑 MY"></i>
+                          <i class="header-icon"
+                            ><img src="images/icon_shopping.png" alt="쇼핑 MY"
+                          /></i>
                           쇼핑 MY
                         </a>
                       </li>
                       <li>
                         <a href="">
-                          <i class="header-icon"><img src="images/icon_book.png" alt="도서 MY"></i>
+                          <i class="header-icon"
+                            ><img src="images/icon_book.png" alt="도서 MY"
+                          /></i>
                           도서 MY
                         </a>
                       </li>
@@ -147,37 +171,49 @@
             <ul class="header-cate">
               <li>
                 <a href="#">
-                  <i class="header-icon"><img src="images/icon_tour.png" alt="투어"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_tour.png" alt="투어"
+                  /></i>
                   <span>투어</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="header-icon"> <img src="images/icon_ticket.png" alt="티켓"></i>
+                  <i class="header-icon">
+                    <img src="images/icon_ticket.png" alt="티켓"
+                  /></i>
                   <span>티켓</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="header-icon"><img src="images/icon_shopping.png" alt="쇼핑"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_shopping.png" alt="쇼핑"
+                  /></i>
                   <span>쇼핑</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="header-icon"><img src="images/icon_book.png" alt="도서"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_book.png" alt="도서"
+                  /></i>
                   <span>도서</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="header-icon"><img src="images/icon_triple.png" alt="트리플"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_triple.png" alt="트리플"
+                  /></i>
                   <span>트리플</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="icon-hot">
-                  <i class="header-icon"><img src="images/icon_special.png" alt="여행초특가"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_special.png" alt="여행초특가"
+                  /></i>
                   <span>여행초특가</span>
                 </a>
               </li>
@@ -186,7 +222,9 @@
             <ul class="header-today-menu">
               <li>
                 <a href="#">
-                  <i class="header-icon"><img src="images/icon_gnb_nol.png" alt="항공 즉시할인"></i>
+                  <i class="header-icon"
+                    ><img src="images/icon_gnb_nol.png" alt="항공 즉시할인"
+                  /></i>
                   <span>항공 즉시할인</span>
                 </a>
               </li>
@@ -198,49 +236,53 @@
       <div class="main">
         <!-- 비주얼 슬라이드 -->
         <section class="visual">
-          <div class="visual-inner">
+          <div class="inner">
             <div class="swiper visual-slide">
-              <div class="swiper-wrapper">
-                
-              </div>
+              <div class="swiper-wrapper"></div>
             </div>
             <!-- Visual Navigation -->
-            <button class="visual-btn slide-btn next">
-              이전
-            </button>
-            <button class="visual-btn slide-btn prev">
-              다음
-            </button>
+            <button class="visual-btn slide-btn next">이전</button>
+            <button class="visual-btn slide-btn prev">다음</button>
           </div>
         </section>
         <!-- //비주얼 슬라이드 -->
         <!-- 쇼핑추천 -->
         <section class="recommend">
-          <div class="recommend-inner">
+          <div class="inner">
             <div class="title-wrap">
               <h2 class="title">쇼핑 추천</h2>
-              <span class="title-txt">할인이 쎄다! 지금, 특가 상품을 확인하세요.</span>
+              <span class="title-txt"
+                >할인이 쎄다! 지금, 특가 상품을 확인하세요.</span
+              >
             </div>
             <div class="recommend-wrap">
-                <ul class="recommend-tab tab-list">
-                  <li ><button class="tab-btn on" data-category="tab-1">쎈딜</button></li>
-                  <li><button class="tab-btn" data-category="tab-2">베스트</button></li>
-                  <li><button class="tab-btn" data-category="tab-3">블프데이</button></li>
-                  <li><button class="tab-btn" data-category="tab-4">디지털프라자</button></li>
-                  <li><a href="" class="tab-btn">소담상회</a></li>
-                </ul>
-                <div class="swiper recommend-slide">
-                  <div class="swiper-wrapper">
-                    <!-- 외부데이터 연동 -->
-                  </div>
+              <ul class="recommend-tab tab-list">
+                <li>
+                  <button class="tab-btn on" data-category="tab-1">쎈딜</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-2">베스트</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-3">
+                    블프데이
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-4">
+                    디지털프라자
+                  </button>
+                </li>
+                <li><a href="" class="tab-btn">소담상회</a></li>
+              </ul>
+              <div class="swiper recommend-slide">
+                <div class="swiper-wrapper">
+                  <!-- 외부데이터 연동 -->
                 </div>
-                <!-- recommend Navigation -->
-                <button class="recommend-btn slide-btn next">
-                  이전
-                </button>
-                <button class="recommend-btn slide-btn prev">
-                  다음
-                </button>
+              </div>
+              <!-- recommend Navigation -->
+              <button class="recommend-btn slide-btn next">이전</button>
+              <button class="recommend-btn slide-btn prev">다음</button>
             </div>
             <div class="link-btn">
               <a href=""><span>쇼핑 홈 바로가기</span></a>
@@ -250,30 +292,40 @@
         <!-- //쇼핑추천 -->
         <!-- 투어 -->
         <section class="tour">
-          <div class="tour-inner">
+          <div class="inner">
             <div class="title-wrap">
               <h2 class="title">투어 특가</h2>
               <span class="title-txt">해외여행은 인터파크다</span>
             </div>
             <div class="tour-wrap">
               <ul class="tour-tab tab-list">
-                <li ><button class="tab-btn on" data-category="tab-1">망설이면 품절</button></li>
-                <li><button class="tab-btn" data-category="tab-2">패키지</button></li>
-                <li><button class="tab-btn" data-category="tab-3">국내숙소</button></li>
-                <li><button class="tab-btn" data-category="tab-4">해외숙소</button></li>
+                <li>
+                  <button class="tab-btn on" data-category="tab-1">
+                    망설이면 품절
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-2">패키지</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-3">
+                    국내숙소
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-4">
+                    해외숙소
+                  </button>
+                </li>
               </ul>
               <div class="swiper tour-slide">
                 <div class="swiper-wrapper">
-                    <!-- 외부데이터 연동 -->
+                  <!-- 외부데이터 연동 -->
                 </div>
               </div>
-                <!-- tour Navigation -->
-                <button class="tour-btn slide-btn next">
-                  이전
-                </button>
-                <button class="tour-btn slide-btn prev">
-                  다음
-                </button>
+              <!-- tour Navigation -->
+              <button class="tour-btn slide-btn next">이전</button>
+              <button class="tour-btn slide-btn prev">다음</button>
             </div>
             <div class="link-btn">
               <a href=""><span>투어 홈 바로가기</span></a>
@@ -283,21 +335,47 @@
         <!-- //투어 -->
         <!-- 티켓 -->
         <section class="ticket">
-          <div class="ticket-inner">
+          <div class="inner">
             <div class="title-wrap">
               <h2 class="title">티켓 랭킹</h2>
               <span class="title-txt">오늘 뭐볼까? 지금 HOT한 공연</span>
             </div>
             <div class="ticket-wrap">
               <ul class="ticket-tab tab-list">
-                <li><button class="tab-btn on" data-category="tab-1">뮤지컬</button></li>
-                <li><button class="tab-btn" data-category="tab-2">콘서트</button></li>
-                <li><button class="tab-btn" data-category="tab-3">스포츠</button></li>
-                <li><button class="tab-btn" data-category="tab-4">전시/행사</button></li>
-                <li><button class="tab-btn" data-category="tab-5">클래식/무용</button></li>
-                <li><button class="tab-btn" data-category="tab-6">아동/가족</button></li>
-                <li><button class="tab-btn" data-category="tab-7">연극</button></li>
-                <li><button class="tab-btn" data-category="tab-8">레저/캠핑</button></li>
+                <li>
+                  <button class="tab-btn on" data-category="tab-1">
+                    뮤지컬
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-2">콘서트</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-3">스포츠</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-4">
+                    전시/행사
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-5">
+                    클래식/무용
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-6">
+                    아동/가족
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-7">연극</button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-8">
+                    레저/캠핑
+                  </button>
+                </li>
               </ul>
               <div class="swiper ticket-slide">
                 <div class="swiper-wrapper">
@@ -305,12 +383,8 @@
                 </div>
               </div>
               <!-- ticket Navigation -->
-              <button class="ticket-btn slide-btn next">
-                이전
-              </button>
-              <button class="ticket-btn slide-btn prev">
-                다음
-              </button>
+              <button class="ticket-btn slide-btn next">이전</button>
+              <button class="ticket-btn slide-btn prev">다음</button>
             </div>
             <div class="link-btn">
               <a href=""><span>티켓 홈 바로가기</span></a>
@@ -320,9 +394,11 @@
         <!-- //티켓 -->
         <!-- 라이브 -->
         <section class="live">
-          <div class="live-inner">
+          <div class="inner">
             <div class="title-wrap">
-              <h2 class="title"><img src="images/title_live.svg" alt="인터파크 LIVE"></h2>
+              <h2 class="title">
+                <img src="images/title_live.svg" alt="인터파크 LIVE" />
+              </h2>
             </div>
             <div class="live-wrap">
               <div class="swiper live-slide">
@@ -331,12 +407,8 @@
                 </div>
               </div>
               <!-- ticket Navigation -->
-              <button class="live-btn slide-btn next">
-                이전
-              </button>
-              <button class="live-btn slide-btn prev">
-                다음
-              </button>
+              <button class="live-btn slide-btn next">이전</button>
+              <button class="live-btn slide-btn prev">다음</button>
             </div>
             <div class="link-btn">
               <a href=""><span>인터파크 라이브 바로가기</span></a>
@@ -346,30 +418,44 @@
         <!-- //라이브 -->
         <!-- 도서 -->
         <section class="book">
-          <div class="book-inner">
+          <div class="inner">
             <div class="title-wrap">
               <h2 class="title">오늘의 도서</h2>
-              <span class="title-txt">지금 읽기 딱 좋은 책, 놓치지 마세요!</span>
+              <span class="title-txt"
+                >지금 읽기 딱 좋은 책, 놓치지 마세요!</span
+              >
             </div>
             <div class="book-wrap">
               <ul class="book-tab tab-list">
-                <li><button class="tab-btn on" data-category="tab-1">MD’s Pick</button></li>
-                <li><button class="tab-btn" data-category="tab-2">베스트셀러</button></li>
-                <li><button class="tab-btn" data-category="tab-3">신간추천</button></li>
-                <li><button class="tab-btn" data-category="tab-4">특가할인</button></li>
+                <li>
+                  <button class="tab-btn on" data-category="tab-1">
+                    MD’s Pick
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-2">
+                    베스트셀러
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-3">
+                    신간추천
+                  </button>
+                </li>
+                <li>
+                  <button class="tab-btn" data-category="tab-4">
+                    특가할인
+                  </button>
+                </li>
               </ul>
               <div class="swiper book-slide">
                 <div class="swiper-wrapper">
                   <!-- 외부데이터 연동 -->
                 </div>
               </div>
-                <!-- book Navigation -->
-                <button class="book-btn slide-btn next">
-                  이전
-                </button>
-                <button class="book-btn slide-btn prev">
-                  다음
-                </button>
+              <!-- book Navigation -->
+              <button class="book-btn slide-btn next">이전</button>
+              <button class="book-btn slide-btn prev">다음</button>
             </div>
             <div class="link-btn">
               <a href=""><span>도서 홈 바로가기</span></a>
@@ -379,10 +465,12 @@
         <!-- //도서 -->
         <!-- 이벤트 -->
         <section class="event">
-          <div class="event-inner">
+          <div class="inner">
             <div class="title-wrap">
               <h2 class="title">이벤트</h2>
-              <span class="title-txt">인터파크에서 할인혜택을 꼭 챙기세요.</span>
+              <span class="title-txt"
+                >인터파크에서 할인혜택을 꼭 챙기세요.</span
+              >
             </div>
             <div class="event-wrap">
               <div class="swiper event-slide">
@@ -390,13 +478,9 @@
                   <!-- 외부데이터 연동 -->
                 </div>
               </div>
-                <!-- event Navigation -->
-                <button class="event-btn slide-btn next">
-                  이전
-                </button>
-                <button class="event-btn slide-btn prev">
-                  다음
-                </button>
+              <!-- event Navigation -->
+              <button class="event-btn slide-btn next">이전</button>
+              <button class="event-btn slide-btn prev">다음</button>
             </div>
           </div>
         </section>
@@ -406,7 +490,7 @@
       <!-- 하단 영역 -->
       <footer class="footer">
         <div class="footer-link">
-          <div class="footer-inner">
+          <div class="inner">
             <ul class="footer-link-list">
               <li>
                 <button>회사소개</button>
@@ -416,7 +500,9 @@
                 </ul>
               </li>
               <li><a href="">이용약관</a></li>
-              <li><a href=""><b>개인정보 처리 방침</b></a></li>
+              <li>
+                <a href=""><b>개인정보 처리 방침</b></a>
+              </li>
               <li><a href="">위치기반서비스 이용약관</a></li>
               <li><a href="">여행약관</a></li>
               <li><a href="">여행자 보험 가입안내</a></li>
@@ -449,33 +535,55 @@
             </ul>
           </div>
         </div>
-        <div class="footer-inner">
+        <div class="inner">
           <div div class="footer-info-wrap">
             <div class="footer-info">
               <h4>(주)인터파크트리플</h4>
               <ul class="footer-info-list">
                 <li>
-                  <p><span>서울시 강남구 삼성로 512 삼성동빌딩 10층</span>
-                  <span>호스팅서비스제공자 (주)인터파크트리플</span></p>
-                  <p><span>사업자등록번호 824-81-02515 <a href="" class="blue">사업자정보확인</a></span>
-                  <span>통신판매업신고 2022-서울강남-02179</span></p>
-                  <p><span>관광사업증 등록번호 : 제2014-42호대표이사 최휘영</span></p>
+                  <p>
+                    <span>서울시 강남구 삼성로 512 삼성동빌딩 10층</span>
+                    <span>호스팅서비스제공자 (주)인터파크트리플</span>
+                  </p>
+                  <p>
+                    <span
+                      >사업자등록번호 824-81-02515
+                      <a href="" class="blue">사업자정보확인</a></span
+                    >
+                    <span>통신판매업신고 2022-서울강남-02179</span>
+                  </p>
+                  <p>
+                    <span
+                      >관광사업증 등록번호 : 제2014-42호대표이사 최휘영</span
+                    >
+                  </p>
                 </li>
                 <li>
                   <p>
-                    <b>고객센터</b> 
+                    <b>고객센터</b>
                     <span><a href="" class="blue">투어1:1문의</a></span>
                     <span><a href="" class="blue">티켓1:1문의</a></span>
                   </p>
                   <p>
                     <span>투어 <a href="tel:1588-3443">1588-3443</a></span>
                     <span>티켓 <a href="tel:1544-1555">1544-1555</a></span>
-                    <span>해외항공 <a href="tel:02-3479-4399">02-3479-4399</a></span>
-                    <span>국내항공 <a href="tel:02-3479-4340">02-3479-4340</a></span>
+                    <span
+                      >해외항공
+                      <a href="tel:02-3479-4399">02-3479-4399</a></span
+                    >
+                    <span
+                      >국내항공
+                      <a href="tel:02-3479-4340">02-3479-4340</a></span
+                    >
                   </p>
                   <p>
                     <span>팩스 <a href="tel:02-830-7807">02-830-7807</a></span>
-                    <span>이메일 <a href="mailto:helpdesk@interparktriple.com">helpdesk@interparktriple.com</a></span>
+                    <span
+                      >이메일
+                      <a href="mailto:helpdesk@interparktriple.com"
+                        >helpdesk@interparktriple.com</a
+                      ></span
+                    >
                   </p>
                 </li>
                 <li>
@@ -492,7 +600,10 @@
                 </li>
                 <li>
                   <address>
-                    (주)인터파크트리플은 인터파크티켓, 인터파크투어의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 (주)인터파크트리플은 일체 책임을 지지 않습니다. <br>
+                    (주)인터파크트리플은 인터파크티켓, 인터파크투어의
+                    통신판매중개자로서 통신판매의 당사자가 아니므로, 개별
+                    판매자가 등록한 오픈마켓 상품에 대해서 (주)인터파크트리플은
+                    일체 책임을 지지 않습니다. <br />
                     Copyright ⓒ InterparkTriple Corp. All Rights Reserved.
                   </address>
                 </li>
@@ -502,14 +613,24 @@
               <h4>(주)인터파크커머스</h4>
               <ul class="footer-info-list">
                 <li>
-                  <p><span>서울시 서초구 강남대로 447(서초동, 남서울빌딩)</span></p>
-                  <p><span>호스팅서비스제공자 (주)인터파크커머스</span>대표이사 김동식<span></span> </p>
-                  <p><span>사업자등록번호 422-81-03185 <a href="" class="blue">사업자정보확인</a></span>
-                  <span>통신판매업신고 2023-서울서초-0823</span></p>
+                  <p>
+                    <span>서울시 서초구 강남대로 447(서초동, 남서울빌딩)</span>
+                  </p>
+                  <p>
+                    <span>호스팅서비스제공자 (주)인터파크커머스</span>대표이사
+                    김동식<span></span>
+                  </p>
+                  <p>
+                    <span
+                      >사업자등록번호 422-81-03185
+                      <a href="" class="blue">사업자정보확인</a></span
+                    >
+                    <span>통신판매업신고 2023-서울서초-0823</span>
+                  </p>
                 </li>
                 <li>
                   <p>
-                    <b>고객센터</b> 
+                    <b>고객센터</b>
                     <span><a href="" class="blue">투어1:1문의</a></span>
                     <span><a href="" class="blue">도서1:1문의</a></span>
                   </p>
@@ -519,7 +640,12 @@
                   </p>
                   <p>
                     <span>팩스 <a href="tel:02-838-0750">02-838-0750</a></span>
-                    <span>이메일 <a href="mailto:helpshop@interparkshop.com">helpshop@interparkshop.com</a></span>
+                    <span
+                      >이메일
+                      <a href="mailto:helpshop@interparkshop.com"
+                        >helpshop@interparkshop.com</a
+                      ></span
+                    >
                   </p>
                 </li>
                 <li>
@@ -530,23 +656,26 @@
                     <span>팩스 <a href="tel:02-838-0750">02-838-0750</a></span>
                   </p>
                   <p>
-                    <span>이메일  helpshop@interparkshop.com</span>
-                    <span>개인정보보호책임자 cposhopping@interparkshop.com</span>
+                    <span>이메일 helpshop@interparkshop.com</span>
+                    <span
+                      >개인정보보호책임자 cposhopping@interparkshop.com</span
+                    >
                   </p>
                 </li>
                 <li>
                   <address>
-                    (주)인터파크커머스는 인터파크쇼핑, 인터파크도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다. <br>
+                    (주)인터파크커머스는 인터파크쇼핑, 인터파크도서의
+                    통신판매중개자로서 통신판매의 당사자가 아니므로, 개별
+                    판매자가 등록한 오픈마켓 상품에 대해서 주식회사
+                    인터파크커머스는 일체 책임을 지지 않습니다. <br />
                     Copyright ⓒ Interpark Commerce Corp. All Rights Reserved.
                   </address>
                 </li>
               </ul>
             </div>
-          </div> 
+          </div>
         </div>
       </footer>
     </div>
   </body>
 </html>
-  
-
