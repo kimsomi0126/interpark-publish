@@ -38,8 +38,7 @@
 }
 .recommend-slide-item .item-img img {
   opacity: 0.9;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .recommend-slide-item .item-info {
   padding: 2rem;
@@ -56,4 +55,4 @@
 
 .recommend-btn.prev, .recommend-btn.next {
   top: calc(50% + 2rem);
-}/*# sourceMappingURL=recommend.css.map */
+}

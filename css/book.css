@@ -23,8 +23,7 @@
 }
 .book-slide-item .item-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .book-slide-item .item-info {
   margin: 1rem 0;
@@ -60,4 +59,4 @@
     height: auto;
     aspect-ratio: 1/1.5;
   }
-}/*# sourceMappingURL=book.css.map */
+}

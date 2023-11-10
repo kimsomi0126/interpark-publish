@@ -73,11 +73,6 @@
 .header-search label {
   display: none;
 }
-.header-search input::-moz-placeholder {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #999;
-}
 .header-search input::placeholder {
   font-size: 1.5rem;
   font-weight: 500;
@@ -328,4 +323,27 @@
   position: relative;
   display: flex;
   align-items: center;
-}/*# sourceMappingURL=header.css.map */
+}
+
+@media (max-width: 1024px) {
+  .header.scroll {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 76rem;
+  }
+  .header .inner {
+    margin: 0;
+  }
+  .header .menber-menu > li {
+    display: none;
+  }
+  .header .menber-menu > li:nth-child(3) {
+    display: block;
+  }
+  .header .mypage-btn {
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 0;
+    background: url(../images/icon_mypage.svg) no-repeat center/cover;
+  }
+}

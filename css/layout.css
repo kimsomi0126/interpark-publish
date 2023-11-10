@@ -23,9 +23,9 @@
     max-width: 76rem;
   }
   .main > section {
-    border-bottom: 1rem solid #222;
+    border-bottom: 0.7rem solid #f0f4f4;
   }
   .inner {
     margin: 3rem auto;
   }
-}/*# sourceMappingURL=layout.css.map */
+}
